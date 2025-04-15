@@ -27,23 +27,34 @@
         class="accordion-content bg-light-black text-white overflow-hidden"
         :style="{ height: 0 }"
     >
-      <div class="p-6">
-        <div class="h-[300px] mb-8">
+      <div class="p-6 lg:flex gap-12">
+        <div class="h-[300px] lg:h-[530px] mb-8 lg:mb-0 lg:flex-1">
           <img
               class="w-full h-full object-cover object-center"
               src="~/assets/images/test_mockup.png"
               alt="mockup_project"
           />
         </div>
-        <hr class="bg-white my-12" />
-        <div class="space-y-6">
-          <p class="dm-sans-regular uppercase text-white">
-            Tiramisu sesame snaps donut chocolate cake muffin jelly-o pudding pie...
-          </p>
-          <p class="dm-sans-regular uppercase text-white">
-            Technologies utilisées : SYMFONY 6 / EASY ADMIN / tailwind / twig component / stripe
-          </p>
-          <a class="text-white dm-sans-regular uppercase underline" href="#">Visiter le site</a>
+        <div class="lg:flex-1 lg:self-end">
+          <hr class="bg-white my-12"/>
+          <div class="space-y-6">
+            <p class="dm-sans-regular uppercase text-white">
+              Tiramisu sesame snaps donut chocolate cake muffin jelly-o pudding pie. Topping sugar plum croissant candy
+              muffin bonbon lemon drops chocolate. Chocolate bar jujubes marzipan ice cream pie dragée donut cheesecake.
+              Soufflé dragée candy canes dragée halvah sweet icing candy tiramisu. Cake donut biscuit apple pie tiramisu
+              croissant icing caramels.
+            </p>
+            <p class="dm-sans-regular uppercase text-white">
+              Tiramisu sesame snaps donut chocolate cake muffin jelly-o pudding pie. Topping sugar plum croissant candy
+              muffin bonbon lemon drops chocolate. Chocolate bar jujubes marzipan ice cream pie dragée donut cheesecake.
+              Soufflé dragée candy canes dragée halvah sweet icing candy tiramisu. Cake donut biscuit apple pie tiramisu
+              croissant icing caramels.
+            </p>
+            <p class="dm-sans-regular uppercase text-white">
+              Technologies utilisées : SYMFONY 6 / EASY ADMIN / tailwind / twig component / stripe
+            </p>
+            <a class="text-white dm-sans-regular uppercase underline" href="#">Visiter le site</a>
+          </div>
         </div>
       </div>
     </div>
@@ -51,8 +62,8 @@
 </template>
 
 <script setup>
-import { ref, nextTick, defineProps, onMounted } from 'vue'
-import { gsap } from 'gsap'
+import {ref, nextTick, defineProps, onMounted} from 'vue'
+import {gsap} from 'gsap'
 
 defineProps(['title', 'year', 'from', 'content'])
 const accordionOpen = ref(false)
@@ -73,7 +84,7 @@ const toggleAccordion = async () => {
 
     gsap.fromTo(
         content,
-        { height: 0 },
+        {height: 0},
         {
           height: content.scrollHeight + 'px',
           duration: 0.5,
