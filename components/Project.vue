@@ -1,10 +1,10 @@
 <template>
   <div class="js-container-project py-3 flex justify-between items-center cursor-pointer relative js-block-project text-light-black">
-    <div class="pl-6 z-20 dm-sans-bold uppercase text-xl tracking-[-1px]">
+    <div class="pl-6 z-20 dm-sans-bold uppercase tracking-[-1px]">
       {{ title }} <span class="dm-sans-medium"> - {{ year }}</span>
     </div>
     <div class="z-20 pr-6 flex justify-between items-center gap-10">
-      <div class=" text-xl font-kenoky uppercase">{{ from }}</div>
+      <div class="font-kenoky uppercase">{{ from }}</div>
       <svg class="js-arrow-project" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0.999999 1.25L16 16.25M16 16.25L1 16.25M16 16.25L16 1.25" stroke="#262626" stroke-width="2"/>
       </svg>
