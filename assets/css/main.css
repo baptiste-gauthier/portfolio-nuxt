@@ -7,6 +7,14 @@
     --color-light-black: #262626;
 }
 
+@font-face {
+    font-family: 'kenoky';
+    src: url('/fonts/kenoky.light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .dm-sans-medium {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
