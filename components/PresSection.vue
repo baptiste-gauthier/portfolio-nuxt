@@ -3,11 +3,11 @@
     <div class="max-w-[1815px] mx-auto px-6 pb-16 2xl:pb-32 lg:flex lg:gap-8">
 
       <div class="h-[370px] lg:h-[430px] lg:flex-[1.3]">
-        <img class="h-full w-full object-cover object-top" src="~/assets/images/baptiste.png"
+        <img class="h-full w-full object-contain object-top" src="~/assets/images/baptiste.png"
              alt="Baptiste Gauthier - Développeur FullStack">
       </div>
 
-      <div class="flex mt-6 lg:flex-[2]">
+      <div class="flex mt-6 lg:mt-0 lg:flex-[2]">
         <div class="flex-1">
           <div class="text-white mb-4 uppercase dm-sans-medium underline">
             Skills :

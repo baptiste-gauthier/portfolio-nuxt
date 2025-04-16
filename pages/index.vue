@@ -109,5 +109,4 @@ onMounted(() => {
   gsap.to('.star', {rotation: 360, duration: 2, repeat: -1, transformOrigin: 'center', ease: 'none'});
 })
 
-
 </script>

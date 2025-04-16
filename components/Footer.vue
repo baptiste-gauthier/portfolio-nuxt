@@ -3,19 +3,37 @@
     <div class="max-w-[1815px] mx-auto px-6">
       <div class="flex flex-col md:flex-row justify-between">
         <ul class="flex items-center gap-2">
-          <li><a class="text-white dm-sans-light uppercase" href="#">Linkedin</a></li>
-          <li><a class="text-white dm-sans-light uppercase" href="#">GitHub</a></li>
-          <li><a class="text-white dm-sans-light uppercase" href="#">About Me</a></li>
+          <li><a class="text-white dm-sans-light uppercase text-sm" href="#">Linkedin</a></li>
+          <li><a class="text-white dm-sans-light uppercase text-sm" href="#">GitHub</a></li>
+          <li><a class="text-white dm-sans-light uppercase text-sm" href="#">About Me</a></li>
         </ul>
-        <div class="text-white dm-sans-light uppercase">
+        <div class="text-white dm-sans-light uppercase text-sm">
           ©2025 Baptiste Gauthier
         </div>
-        <div class="text-white dm-sans-light uppercase">
-          16:46 PM
+        <div class="text-white dm-sans-light uppercase text-sm">
+          {{ hour }}
         </div>
       </div>
     </div>
   </footer>
 </template>
-<script setup lang="ts">
+
+<script setup>
+import { ref, onMounted } from 'vue';
+
+const formatTime = () => {
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, '0');
+  const minutes = now.getMinutes().toString().padStart(2, '0');
+  const suffix = now.getHours() >= 12 ? 'PM' : 'AM';
+  return `${hours}:${minutes} ${suffix}`;
+};
+
+const hour = ref(formatTime());
+
+onMounted(() => {
+  setInterval(() => {
+    hour.value = formatTime();
+  }, 1000);
+});
 </script>

@@ -6,7 +6,7 @@
           Full Stack Developer
         </div>
         <div class="font-medium dm-sans-medium text-sm text-light-black">
-          Marseille, France, 14:50 PM
+          Marseille, France, {{ hour }}
         </div>
       </li>
       <li class="flex items-center gap-6">
@@ -22,5 +22,23 @@
     </div>
   </div>
 </template>
-<script setup lang="ts">
+
+<script setup>
+import { ref, onMounted } from 'vue';
+
+const formatTime = () => {
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, '0');
+  const minutes = now.getMinutes().toString().padStart(2, '0');
+  const suffix = now.getHours() >= 12 ? 'PM' : 'AM';
+  return `${hours}:${minutes} ${suffix}`;
+};
+
+const hour = ref(formatTime());
+
+onMounted(() => {
+  setInterval(() => {
+    hour.value = formatTime();
+  }, 1000);
+});
 </script>
