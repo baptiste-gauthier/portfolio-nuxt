@@ -3,12 +3,10 @@
     <div class="max-w-[1815px] mx-auto px-6 pt-16 2xl:pt-32">
       <div class="flex flex-col md:flex-row items-center gap-6">
         <div>
-          <h1 class="text-center md:text-left font-light uppercase font-kenoky text-5xl sm:text-7xl lg:text-9xl text-light-black">
-            Baptiste
-          </h1>
-          <h2 class="text-center md:text-left font-medium uppercase dm-sans-medium text-5xl sm:text-7xl lg:text-9xl tracking-[-2px] text-light-black">
-            Gauthier
-          </h2>
+          <client-only>
+            <TitlePres />
+          </client-only>
+
         </div>
         <svg class="star w-[36px] md:w-[56px]" width="56" height="56" viewBox="0 0 56 56" fill="none"
              xmlns="http://www.w3.org/2000/svg">
@@ -98,15 +96,18 @@
   <PresSection />
   <ContactSection />
 </template>
-<script setup lang="ts">
+<script setup>
 
 import {gsap} from "gsap";
 import {onMounted} from "vue";
 import PresSection from "~/components/PresSection.vue";
 import ContactSection from "~/components/ContactSection.vue";
+import TitlePres from "~/components/TitlePres.vue";
 
-onMounted(() => {
+onMounted( () => {
+
   gsap.to('.star', {rotation: 360, duration: 2, repeat: -1, transformOrigin: 'center', ease: 'none'});
+
 })
 
 </script>

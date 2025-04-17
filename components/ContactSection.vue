@@ -3,7 +3,7 @@
     <div class="max-w-[1815px] mx-auto px-6">
 
       <div class="lg:flex items-center gap-6">
-        <h2 class="font-kenoky text-7xl lg:text-9xl uppercase text-white">Contact</h2>
+        <h2 data-splitting class="font-kenoky text-7xl lg:text-9xl uppercase text-white">Contact</h2>
         <h3 class="dm-sans-bold text-7xl lg:text-9xl uppercase text-white lg:mt-4">Me</h3>
       </div>
 

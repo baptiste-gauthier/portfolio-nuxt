@@ -71,4 +71,9 @@
     animation: 15s slide infinite linear reverse;
 }
 
+.char {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
 
