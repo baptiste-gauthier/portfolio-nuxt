@@ -66,7 +66,6 @@ onMounted(() => {
         stagger: 0.1,
         ease : "power2.in",
         scrollTrigger: {
-          markers: true,
           trigger: textSection,
           scrub: true,
           start: "top 90%",
