@@ -12,7 +12,7 @@
           <a data-splitting class="overflow-reveal text-white block text-2xl lg:text-4xl uppercase dm-sans-medium" href="tel:+33772139190">+33772139190</a>
         </div>
         <div class="overflow-hidden">
-          <a data-splitting class="overflow-reveal text-white block text-2xl lg:text-4xl dm-sans-medium" href="mailto:baptiste.gauthier@proton.me">baptiste.gauthier@proton.me</a>
+          <a data-splitting class="overflow-reveal text-white block text-2xl lg:text-4xl dm-sans-medium" href="mailto:bapt.gauthier@proton.me">bapt.gauthier@proton.me</a>
         </div>
         <div class="overflow-hidden">
           <div data-splitting class="overflow-reveal text-white text-2xl lg:text-4xl uppercase dm-sans-medium">Marseille, France</div>
