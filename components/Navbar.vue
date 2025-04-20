@@ -10,9 +10,9 @@
         </div>
       </li>
       <li class="flex items-center gap-6">
-        <div><a class="dm-sans-medium text-sm font-medium text-light-black" href="#">About</a></div>
-        <div><a class="dm-sans-medium text-sm font-medium text-light-black" href="#">Projects</a></div>
-        <div><a class="dm-sans-medium text-sm font-medium text-light-black" href="#">Contact</a></div>
+        <div><a class="dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#">About</a></div>
+        <div><a class="dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#">Projects</a></div>
+        <div><a class="dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#">Contact</a></div>
       </li>
     </ul>
 
