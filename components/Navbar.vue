@@ -1,18 +1,18 @@
 <template>
-  <div class="max-w-[1815px] mx-auto flex justify-end md:block p-6 sticky top-0 bg-transparent">
+  <div id="navigation" class="mix-blend-difference max-w-[1815px] mx-auto flex justify-end md:block p-6 sticky top-0 bg-transparent z-40">
     <ul class="hidden md:flex dm-sans-medium uppercase justify-between items-center">
       <li class="flex items-center gap-6">
-        <div class="dm-sans-medium font-medium text-sm text-light-black">
+        <div class="dm-sans-medium font-medium text-sm text-light-black bloc_nav ">
           Full Stack Developer
         </div>
-        <div class="font-medium dm-sans-medium text-sm text-light-black">
+        <div class="font-medium dm-sans-medium text-sm text-light-black bloc_nav ">
           Marseille, France, {{ hour }}
         </div>
       </li>
       <li class="flex items-center gap-6">
-        <div><a class="dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#">About</a></div>
-        <div><a class="dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#">Projects</a></div>
-        <div><a class="dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#">Contact</a></div>
+        <div><a class="bloc_nav dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#about">About</a></div>
+        <div><a class="bloc_nav dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#projects">Projects</a></div>
+        <div><a class="bloc_nav dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#contact">Contact</a></div>
       </li>
     </ul>
 
@@ -28,9 +28,9 @@
   <div ref="navMobileRef" class="p-6 nav-mobile h-screen bg-white fixed w-screen top-0 z-30 md:hidden translate-x-[100vw] flex flex-col justify-around">
 
       <ul class="flex flex-col gap-6 items-center justify-center">
-        <li><a class=" text-light-black font-kenoky uppercase text-4xl hover:underline" href="#">About</a></li>
-        <li><a class=" text-light-black font-kenoky uppercase text-4xl hover:underline" href="#">Projects</a></li>
-        <li><a class=" text-light-black font-kenoky uppercase text-4xl hover:underline" href="#">Contact</a></li>
+        <li><a class=" text-light-black font-kenoky uppercase text-4xl hover:underline" href="#about">About</a></li>
+        <li><a class=" text-light-black font-kenoky uppercase text-4xl hover:underline" href="#projects">Projects</a></li>
+        <li><a class=" text-light-black font-kenoky uppercase text-4xl hover:underline" href="#contact">Contact</a></li>
         <li><svg class="star w-[36px] md:w-[56px]" width="56" height="56" viewBox="0 0 56 56" fill="none"
              xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_49_343)">
@@ -138,16 +138,16 @@ function openingHandler() {
     // on ouvre
     gsap.to(blocNav, {
       x: 0,
-      duration: 1,
-      ease: "power4.in",
+      duration: .7,
+      ease: "power2.in",
     })
 
   } else {
     // on ferme
     gsap.to(blocNav, {
       x: "100vw",
-      duration: 1,
-      ease: "power4.out",
+      duration: .7,
+      ease: "power2.in",
     })
   }
 }

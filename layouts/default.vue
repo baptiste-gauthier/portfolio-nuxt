@@ -17,7 +17,9 @@ import { onMounted } from 'vue';
 
 onMounted(() => {
 // Initialize a new Lenis instance for smooth scrolling
-const lenis = new Lenis();
+const lenis = new Lenis({
+  anchors: true,
+});
 
 // Synchronize Lenis scrolling with GSAP's ScrollTrigger plugin
 lenis.on('scroll', ScrollTrigger.update);

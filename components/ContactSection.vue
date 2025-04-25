@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-light-black pb-16">
+  <section class="bg-light-black pb-16" id="contact">
     <div class="max-w-[1815px] mx-auto px-6">
 
       <div class="lg:flex items-center gap-6 overflow-hidden">

@@ -31,7 +31,7 @@
         <div class="h-[300px] lg:h-[530px] mb-8 lg:mb-0 lg:flex-1">
           <img
               class="w-full h-full object-cover object-center"
-              src="~/assets/images/test_mockup.png"
+              :src=image
               alt="mockup_project"
           />
         </div>
@@ -65,7 +65,7 @@
 import {ref, nextTick, defineProps, onMounted} from 'vue'
 import {gsap} from 'gsap'
 
-defineProps(['title', 'year', 'from', 'content'])
+defineProps(['title', 'year', 'from', 'content', 'image'])
 const accordionOpen = ref(false)
 const accordionRef = ref(null)
 

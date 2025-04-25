@@ -34,6 +34,18 @@ onMounted(() => {
     );
   });
 
+  const navigation = document.querySelector('#navigation');
+  const navigationLink = navigation.querySelectorAll('.bloc_nav');
+
+  gsap.to(navigationLink, {
+    color: "white",
+    scrollTrigger: {
+      trigger: '#infinite-slide',
+      start: "top",
+      scrub: true,
+    }
+  })
+
   document.querySelectorAll('.fade-in').forEach((el) => {
 
     let target = el;

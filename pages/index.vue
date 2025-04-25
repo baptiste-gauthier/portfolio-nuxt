@@ -26,8 +26,8 @@
       <div class="md:flex justify-between gap-6 image-pres">
         <div class="order-2">
           <div class="hidden lg:flex py-2 items-center gap-2">
-            <a href="#" class="text-light-black uppercase dm-sans-medium">Linkedin</a>
-            <a href="#" class="text-light-black uppercase dm-sans-medium">Github</a>
+            <a href="https://www.linkedin.com/in/baptiste-gauthier-a02ab9210" class="text-light-black uppercase dm-sans-medium hover:underline">Linkedin</a>
+            <a href="https://github.com/baptiste-gauthier" class="text-light-black uppercase dm-sans-medium hover:underline">Github</a>
           </div>
           <div class="h-[320px] w-[280px] mx-auto my-8 md:my-0">
             <img class="h-full w-full object-cover object-center" src="~/assets/images/image_pres.png"
@@ -44,13 +44,15 @@
 
   <SectionTitle title="projects"/>
 
-  <section class="flex flex-col-reverse border-y-2 border-light-black divide-y-2 divide-y-reverse">
-    <Project title="Sud Playground" year="2020" from="Side Project" content="Sud Playground"/>
-    <Project title="Synergie Family" year="2022" from="Synergie Family" content="Synergie Family"/>
-    <Project title="Épopée Village" year="2023" from="Synergie Family" content="Épopée Village"/>
-    <Project title="Luberon ramonage" year="2024" from="Side Project" content="Luberon ramonage"/>
-    <Project title="Big Mars" year="2025" from="Synergie Family" content="Big Mars"/>
-    <Project title="Passer le BAFA" year="2025" from="Synergie Family" content="Passer le BAFA"/>
+  <section id="projects" class="flex flex-col-reverse border-y-2 border-light-black divide-y-2 divide-y-reverse">
+    <Project title="Sud Playground" year="2020" from="Side Project" content="Sud Playground" :image=sudPlaygrounds />
+    <Project title="Épopée Village" year="2022" from="Synergie Family" content="Épopée Village" :image=epopeeVillage />
+    <Project title="Synergie Family" year="2022" from="Synergie Family" content="Synergie Family" :image=synergieFamily />
+    <Project title="Qwantic" year="2022" from="Synergie Family" content="Qwantic" :image=qwantic />
+    <Project title="Greenskills" year="2024" from="Synergie Family" content="Green Skills" :image=greenskills />
+    <Project title="Luberon ramonage" year="2024" from="Side Project" content="Luberon ramonage" :image="luberonRamonage "/>
+    <Project title="Big Mars" year="2025" from="Synergie Family" content="Big Mars" :image=bigMars />
+    <Project title="Passer le BAFA" year="2025" from="Synergie Family" content="Passer le BAFA" :image=passerLeBafa />
 
   </section>
 
@@ -74,9 +76,19 @@ import PresSection from "~/components/PresSection.vue";
 import ContactSection from "~/components/ContactSection.vue";
 import TitlePres from "~/components/TitlePres.vue";
 
+import sudPlaygrounds from '~/assets/images/projects/sudplaygrounds.jpg'
+import luberonRamonage from '~/assets/images/projects/luberon-ramonage.jpg'
+import bigMars from '~/assets/images/projects/bigmars.jpg'
+import passerLeBafa from '~/assets/images/projects/passer-le-bafa.jpg'
+import synergieFamily from '~/assets/images/projects/synergie.jpg'
+import epopeeVillage from '~/assets/images/projects/epopee.jpg'
+import greenskills from '~/assets/images/projects/greenskills.jpg'
+import qwantic from '~/assets/images/projects/qwantic.jpg'
+
 onMounted( () => {
 
   gsap.to('.star', {rotation: 360, duration: 2, repeat: -1, transformOrigin: 'center', ease: 'none'});
+  gsap.to('.star.reverse', {rotation: -360, duration: 2, repeat: -1, transformOrigin: 'center', ease: 'none'});
 
 })
 

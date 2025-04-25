@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-light-black ">
+  <section class="bg-light-black " id="about">
     <div class="max-w-[1815px] mx-auto px-6 pb-16 2xl:pb-32 lg:flex lg:gap-8">
 
       <div class="h-[370px] lg:h-[430px] lg:flex-[1.3] fade-in">
