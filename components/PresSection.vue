@@ -1,9 +1,9 @@
 <template>
-  <section class="bg-light-black " id="about">
+  <section class="bg-light-black">
     <div class="max-w-[1815px] mx-auto px-6 pb-16 2xl:pb-32 lg:flex lg:gap-8">
 
       <div class="h-[370px] lg:h-[430px] lg:flex-[1.3] fade-in">
-        <img class="h-full w-full object-contain object-top" src="~/assets/images/baptiste.png"
+        <img class="h-full w-full object-contain object-top lg:object-cover" src="~/assets/images/baptiste.png"
              alt="Baptiste Gauthier - Développeur FullStack">
       </div>
 
@@ -42,12 +42,13 @@
       </div>
 
       <div class="mt-6 space-y-6 lg:flex-[2] lg:content-end">
-        <p class="dm-sans-light uppercase text-white fade-in">Danish pie icing brownie shortbread. Chupa chups biscuit cookie croissant gingerbread topping cookie cupcake.
-          Chupa chups cheesecake cotton candy cookie marshmallow biscuit jelly. Cake halvah candy canes gingerbread
-          chocolate.</p>
-        <p class="dm-sans-light uppercase text-white fade-in">Sweet sweet roll fruitcake cupcake caramels. Chocolate candy canes cookie tart bear claw. Chocolate bar
-          toffee toffee dragée chocolate cake croissant lemon drops cotton candy. Danish chocolate bar tootsie roll
-          chupa chups danish.</p>
+        <p class="dm-sans-light uppercase text-white fade-in">Développeur full stack depuis 3 ans, j’ai eu la chance de
+          travailler dans une association engagée dans l'insertion à l’emploi, l’animation socioculturelle et la gestion
+          de centres sociaux. Cette expérience m’a permis de mettre mes compétences techniques au service de projets à
+          impact.</p>
+        <p class="dm-sans-light uppercase text-white fade-in">Après un DUT Métiers du Multimédia et de l’Internet,
+          orienté design graphique et audiovisuel, j’ai choisi de me spécialiser en développement web. J’ai ensuite
+          validé deux titres RNCP : Développeur Web & Web Mobile et Concepteur Développeur d’Application.</p>
       </div>
     </div>
   </section>

@@ -53,7 +53,7 @@
             <p class="dm-sans-regular uppercase text-white">
               Technologies utilisées : SYMFONY 6 / EASY ADMIN / tailwind / twig component / stripe
             </p>
-            <a class="text-white dm-sans-regular uppercase underline" href="#">Visiter le site</a>
+            <a class="text-white dm-sans-regular uppercase underline" :href=link>Visiter le site</a>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
 import {ref, nextTick, defineProps, onMounted} from 'vue'
 import {gsap} from 'gsap'
 
-defineProps(['title', 'year', 'from', 'content', 'image'])
+defineProps(['title', 'year', 'from', 'content', 'image', 'link'])
 const accordionOpen = ref(false)
 const accordionRef = ref(null)
 

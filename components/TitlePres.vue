@@ -36,9 +36,19 @@ onMounted(() => {
 
   const navigation = document.querySelector('#navigation');
   const navigationLink = navigation.querySelectorAll('.bloc_nav');
+  const lines = document.querySelectorAll('.line');
 
   gsap.to(navigationLink, {
     color: "white",
+    scrollTrigger: {
+      trigger: '#infinite-slide',
+      start: "top",
+      scrub: true,
+    }
+  })
+
+  gsap.to(lines, {
+    backgroundColor: "white",
     scrollTrigger: {
       trigger: '#infinite-slide',
       start: "top",
@@ -74,8 +84,8 @@ onMounted(() => {
       {opacity: .5},
       {
         opacity: 1,
-        duration: .2,
-        stagger: 0.1,
+        duration: .4,
+        stagger: 0.15,
         ease : "power2.in",
         scrollTrigger: {
           trigger: textSection,

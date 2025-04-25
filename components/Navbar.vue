@@ -10,7 +10,7 @@
         </div>
       </li>
       <li class="flex items-center gap-6">
-        <div><a class="bloc_nav dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#about">About</a></div>
+        <div><a class="bloc_nav dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#infinite-slide">About</a></div>
         <div><a class="bloc_nav dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#projects">Projects</a></div>
         <div><a class="bloc_nav dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#contact">Contact</a></div>
       </li>
@@ -28,9 +28,9 @@
   <div ref="navMobileRef" class="p-6 nav-mobile h-screen bg-white fixed w-screen top-0 z-30 md:hidden translate-x-[100vw] flex flex-col justify-around">
 
       <ul class="flex flex-col gap-6 items-center justify-center">
-        <li><a class=" text-light-black font-kenoky uppercase text-4xl hover:underline" href="#about">About</a></li>
-        <li><a class=" text-light-black font-kenoky uppercase text-4xl hover:underline" href="#projects">Projects</a></li>
-        <li><a class=" text-light-black font-kenoky uppercase text-4xl hover:underline" href="#contact">Contact</a></li>
+        <li><a class=" text-light-black font-kenoky uppercase text-4xl hover:underline" @click="closeBurger" href="#infinite-slide">About</a></li>
+        <li><a class=" text-light-black font-kenoky uppercase text-4xl hover:underline" @click="closeBurger"href="#projects">Projects</a></li>
+        <li><a class=" text-light-black font-kenoky uppercase text-4xl hover:underline" @click="closeBurger" href="#contact">Contact</a></li>
         <li><svg class="star w-[36px] md:w-[56px]" width="56" height="56" viewBox="0 0 56 56" fill="none"
              xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_49_343)">
@@ -119,13 +119,15 @@ const burger = (event) => {
       rotate: "45deg",
       top: "50%",
       duration: .3,
-      ease : "power2"
+      ease : "power2",
+      backgroundColor : "#262626",
     });
     gsap.to(bottomLine, {
       rotate: "-45deg",
       top: "50%",
       duration: .3,
-      ease : "power2"
+      ease : "power2",
+      backgroundColor : "#262626",
     });
 
     openingHandler();
@@ -150,6 +152,27 @@ function openingHandler() {
       ease: "power2.in",
     })
   }
+}
+
+const closeBurger = () => {
+  const lines = burgerRef.value.querySelectorAll('.line');
+  const [topLine, bottomLine] = lines;
+
+  burger.value = false;
+  gsap.to(topLine, {
+    rotate: "0deg",
+    top: "30%",
+    duration: .3,
+    ease : "power2"
+  });
+  gsap.to(bottomLine, {
+    rotate: "0deg",
+    top: "70%",
+    duration: .3,
+    ease : "power2"
+  });
+
+  openingHandler();
 }
 
 
