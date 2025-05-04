@@ -62,9 +62,22 @@
     <Project title="Luberon ramonage" year="2024" from="Side Project" content="Luberon ramonage"
              :image="luberonRamonage" link="https://luberon-ramonage.fr/"/>
     <Project title="Big Mars" year="2025" from="Synergie Family" content="Big Mars" :image=bigMars
-             link="https://wearebigmars.com/"/>
+             link="https://wearebigmars.com/" text-one="Bigmars est une application mobile qui permet d'aider les jeunes à découvrir leurs soft skills et construire leur projet professionnel de manière ludique et interactive à travers des jeux et des événements."
+             text-two="J'ai développé le site de présentation de l'application en utilisant Symfony 7 et Tailwind CSS. J'y ai intégré un système complet de gestion d'événements permettant la création d'événements multi-dates, la configuration de créneaux, et l'inscription des participants. Un back office a été mis en place avec EasyAdmin pour permettre aux équipes de gérer les utilisateurs, les contacts et l'ensemble des événements de manière autonome."
+             techno="Technos utilisées : Symfony 7, JavaScript, Tailwind CSS"
+             tools="Outils complémentaires : EasyAdmin, Brevo"/>
+
     <Project title="Passer le BAFA" year="2025" from="Synergie Family" content="Passer le BAFA" :image=passerLeBafa
-             link="https://passerlebafa.com"/>
+             link="https://passerlebafa.com" text-one="Le site passerlebafa.com est une plateforme dédiée à 
+              la formation au BAFA (Brevet d'Aptitude aux Fonctions d'Animateur) proposée par l'association Synergie Family, basée à Marseille.
+               Il s'adresse aux jeunes dès 16 ans souhaitant devenir animateurs en accueils collectifs de mineurs,
+              tels que les centres de loisirs ou les colonies de vacances." text-two="J'ai développé le site avec Symfony 6,
+               en intégrant le front avec Twig Components, JavaScript et Tailwind CSS.
+                J'ai mis en place un système de paiement via Stripe, un back office avec EasyAdmin (gestion des sessions, commandes, articles et utilisateurs),
+                ainsi qu'un système de mailing automatisé avec Brevo et des tâches cron. J'ai également géré la mise en production, les crontabs et la sécurisation du site."
+              techno="Technos utilisées : Symfony 6, Twig Components, JavaScript, Tailwind CSS"
+              tools="Outils complémentaires : Stripe, EasyAdmin, Brevo"
+    />
 
   </section>
 

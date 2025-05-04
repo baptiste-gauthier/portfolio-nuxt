@@ -39,19 +39,16 @@
           <hr class="bg-white my-12"/>
           <div class="space-y-6">
             <p class="dm-sans-regular uppercase text-white">
-              Tiramisu sesame snaps donut chocolate cake muffin jelly-o pudding pie. Topping sugar plum croissant candy
-              muffin bonbon lemon drops chocolate. Chocolate bar jujubes marzipan ice cream pie dragée donut cheesecake.
-              Soufflé dragée candy canes dragée halvah sweet icing candy tiramisu. Cake donut biscuit apple pie tiramisu
-              croissant icing caramels.
+              {{ textOne }}
             </p>
             <p class="dm-sans-regular uppercase text-white">
-              Tiramisu sesame snaps donut chocolate cake muffin jelly-o pudding pie. Topping sugar plum croissant candy
-              muffin bonbon lemon drops chocolate. Chocolate bar jujubes marzipan ice cream pie dragée donut cheesecake.
-              Soufflé dragée candy canes dragée halvah sweet icing candy tiramisu. Cake donut biscuit apple pie tiramisu
-              croissant icing caramels.
+              {{ textTwo }}
             </p>
             <p class="dm-sans-regular uppercase text-white">
-              Technologies utilisées : SYMFONY 6 / EASY ADMIN / tailwind / twig component / stripe
+              {{ techno }}
+            </p>
+            <p class="dm-sans-regular uppercase text-white">
+              {{ tools }}
             </p>
             <a class="text-white dm-sans-regular uppercase underline" :href=link>Visiter le site</a>
           </div>
@@ -65,7 +62,7 @@
 import {ref, nextTick, defineProps, onMounted} from 'vue'
 import {gsap} from 'gsap'
 
-defineProps(['title', 'year', 'from', 'content', 'image', 'link'])
+defineProps(['title', 'year', 'from', 'content', 'image', 'link' , 'textOne' , 'textTwo' , 'techno' , 'tools'])
 const accordionOpen = ref(false)
 const accordionRef = ref(null)
 
