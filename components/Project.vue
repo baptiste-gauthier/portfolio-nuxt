@@ -62,7 +62,7 @@
 import {ref, nextTick, defineProps, onMounted} from 'vue'
 import {gsap} from 'gsap'
 
-defineProps(['title', 'year', 'from', 'content', 'image', 'link' , 'textOne' , 'textTwo' , 'techno' , 'tools'])
+defineProps(['title', 'year', 'from', 'content', 'image', 'link', 'textOne', 'textTwo', 'techno', 'tools'])
 const accordionOpen = ref(false)
 const accordionRef = ref(null)
 
@@ -75,9 +75,13 @@ const toggleAccordion = async () => {
 
   if (!content) return
 
+  const container = content.previousElementSibling;
+
   if (accordionOpen.value) {
     // Blocage scroll body
     // document.body.classList.add('overflow-hidden')
+
+    container.classList.add('container-active');
 
     gsap.fromTo(
         content,
@@ -92,6 +96,8 @@ const toggleAccordion = async () => {
         }
     )
   } else {
+
+    container.classList.remove('container-active');
     // Déblocage scroll
     // document.body.classList.remove('overflow-hidden')
 
@@ -106,6 +112,7 @@ const toggleAccordion = async () => {
 
 onMounted(() => {
   const block = document.querySelectorAll('.js-block-project');
+
 
   block.forEach((item) => {
 
@@ -131,14 +138,17 @@ onMounted(() => {
     })
 
     item.addEventListener('mouseleave', (e) => {
-      gsap.to(bgBlack, {scaleY: 0});
-      gsap.to(item, {color: "#262626"});
-      gsap.to(arrowPath, {
-        attr: {
-          stroke: '#262626'
-        }
-      });
-      gsap.to(arrow, {rotate: 0});
+      if (!item.classList.contains('container-active')) {
+        gsap.to(bgBlack, {scaleY: 0});
+        gsap.to(item, {color: "#262626"});
+        gsap.to(arrowPath, {
+          attr: {
+            stroke: '#262626'
+          }
+        });
+        gsap.to(arrow, {rotate: 0});
+      }
+
     })
   })
 })
