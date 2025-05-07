@@ -61,6 +61,11 @@
 <script setup>
 import {ref, nextTick, defineProps, onMounted} from 'vue'
 import {gsap} from 'gsap'
+const { $scrollTo } = useNuxtApp()
+
+const goToSection = (element) => {
+  $scrollTo(element)
+}
 
 defineProps(['title', 'year', 'from', 'content', 'image', 'link', 'textOne', 'textTwo', 'techno', 'tools'])
 const accordionOpen = ref(false)
@@ -95,6 +100,10 @@ const toggleAccordion = async () => {
           },
         }
     )
+
+    goToSection(content);
+
+
   } else {
 
     container.classList.remove('container-active');
@@ -110,7 +119,13 @@ const toggleAccordion = async () => {
 }
 
 
-onMounted(() => {
+onMounted(async () => {
+
+  if (typeof window !== 'undefined') {
+    const LenisModule = await import('lenis')
+    let lenis = new LenisModule.default()
+  }
+
   const block = document.querySelectorAll('.js-block-project');
 
 
