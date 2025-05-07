@@ -49,36 +49,39 @@
   <SectionTitle title="projects"/>
 
   <section id="projects" class="flex flex-col-reverse border-y-2 border-light-black divide-y-2 divide-y-reverse">
+    <Project title="Ancien portfolio" year="2021" from="Side Project" content="Ancien portfolio" :image=oldPortfolio
+             link="https://baptiste-gauthier.students-laplateforme.io/"
+             text-one="Ancien portfolio réalisé durant mes études d'informatique"/>
     <Project title="Sud Playground" year="2020" from="Side Project" content="Sud Playground" :image=sudPlaygrounds
              link="https://sudplaygrounds.com/"
-             text-one="Sudplaygrounds est un site web conçu et designé par un graphiste porteur du projet, visant à référencer l’ensemble des terrains de basketball de Marseille sur une carte interactive. L’utilisateur peut s’inscrire, signaler sa présence sur un terrain, et consulter une feuille de match pour trouver d'autres joueurs disponibles, favorisant ainsi la rencontre et le jeu en communauté."
-             text-two="Développé en PHP, CSS et JavaScript, le site intègre un système d’authentification, une fonctionnalité de terrains favoris, ainsi qu’un back-office permettant d’ajouter de nouveaux terrains et de les positionner sur la carte de manière intuitive."/>
+             text-one="Sudplaygrounds est un site web conçu et designé par un graphiste porteur du projet, visant à référencer l'ensemble des terrains de basketball de Marseille sur une carte interactive. L'utilisateur peut s'inscrire, signaler sa présence sur un terrain, et consulter une feuille de match pour trouver d'autres joueurs disponibles, favorisant ainsi la rencontre et le jeu en communauté."
+             text-two="Développé en PHP, CSS et JavaScript, le site intègre un système d'authentification, une fonctionnalité de terrains favoris, ainsi qu'un back-office permettant d'ajouter de nouveaux terrains et de les positionner sur la carte de manière intuitive."/>
     <Project title="Épopée Village" year="2022" from="Synergie Family" content="Épopée Village" :image=epopeeVillage
              link="https://epopee-village.com/"
-             text-one="L'Épopée Village est un lieu situé à Marseille, pensé comme un écosystème vivant dédié à l’entrepreneuriat à impact, à la culture, à l’éducation et à l’engagement citoyen. Le site met en valeur les multiples espaces et initiatives du village : coworking, événements, incubateurs, ateliers créatifs et tiers-lieux éducatifs."
-             text-two="J’ai développé le site en utilisant Symfony 6, SCSS et JavaScript.
+             text-one="L'Épopée Village est un lieu situé à Marseille, pensé comme un écosystème vivant dédié à l'entrepreneuriat à impact, à la culture, à l'éducation et à l'engagement citoyen. Le site met en valeur les multiples espaces et initiatives du village : coworking, événements, incubateurs, ateliers créatifs et tiers-lieux éducatifs."
+             text-two="J'ai développé le site en utilisant Symfony 6, SCSS et JavaScript.
 
-Le site propose plusieurs fonctionnalités clés : un formulaire de contact avec système de mailing, un formulaire de demande de devis, un module d’agenda pour les événements, ainsi que la gestion des inscriptions à ces événements. Le contenu est également entièrement dynamique et administrable via un back-office sur mesure."/>
+Le site propose plusieurs fonctionnalités clés : un formulaire de contact avec système de mailing, un formulaire de demande de devis, un module d'agenda pour les événements, ainsi que la gestion des inscriptions à ces événements. Le contenu est également entièrement dynamique et administrable via un back-office sur mesure."/>
     <Project title="Synergie Family" year="2022" from="Synergie Family" content="Synergie Family" :image=synergieFamily
              link="https://www.synergiefamily.com/"
-             text-one="Synergie Family est une association engagée dans l’insertion professionnelle à travers divers programmes d’accompagnement, l’animation en milieu scolaire et au sein des accueils collectifs de mineurs (ACM), ainsi que la gestion de centres sociaux, avec pour objectif de favoriser le lien social et l’égalité des chances."
-             text-two="J’ai assuré le développement du back-end du site avec Symfony 6, puis j’ai accompagné l’évolution du front-end sur plusieurs années en assurant la maintenance et les améliorations. Le projet s’appuie sur EasyAdmin, du CSS personnalisé et JavaScript pour les fonctionnalités interactives.
+             text-one="Synergie Family est une association engagée dans l'insertion professionnelle à travers divers programmes d'accompagnement, l'animation en milieu scolaire et au sein des accueils collectifs de mineurs (ACM), ainsi que la gestion de centres sociaux, avec pour objectif de favoriser le lien social et l'égalité des chances."
+             text-two="J'ai assuré le développement du back-end du site avec Symfony 6, puis j'ai accompagné l'évolution du front-end sur plusieurs années en assurant la maintenance et les améliorations. Le projet s'appuie sur EasyAdmin, du CSS personnalisé et JavaScript pour les fonctionnalités interactives.
 
-Le back-office permet une gestion complète du contenu, l’intégration de Stripe Checkout permet la réservation de séjours en ligne, et une section blog a été mise en place pour partager l’actualité de l’association."/>
+Le back-office permet une gestion complète du contenu, l'intégration de Stripe Checkout permet la réservation de séjours en ligne, et une section blog a été mise en place pour partager l'actualité de l'association."/>
     <Project title="Qwantic" year="2022" from="Synergie Family" content="Qwantic" :image=qwantic
              link="https://qwantic.co/"
-             text-one="Qwantic est une plateforme dédiée à la formation professionnelle, pour laquelle j’ai développé l’ensemble du site avec Symfony 6, en utilisant Tailwind CSS, des Twig Components et des Twig Live Components pour un rendu modulaire et réactif. Le back-office a été construit avec EasyAdmin, permettant une gestion simple et efficace du contenu."
-             text-two="Le site propose l’inscription aux formations en ligne, une mise en avant dynamique des formations disponibles, un système de filtres interactif pour faciliter la recherche, ainsi qu’un blog pour relayer les actualités et ressources pédagogiques."/>
+             text-one="Qwantic est une plateforme dédiée à la formation professionnelle, pour laquelle j'ai développé l'ensemble du site avec Symfony 6, en utilisant Tailwind CSS, des Twig Components et des Twig Live Components pour un rendu modulaire et réactif. Le back-office a été construit avec EasyAdmin, permettant une gestion simple et efficace du contenu."
+             text-two="Le site propose l'inscription aux formations en ligne, une mise en avant dynamique des formations disponibles, un système de filtres interactif pour faciliter la recherche, ainsi qu'un blog pour relayer les actualités et ressources pédagogiques."/>
     <Project title="Greenskills" year="2024" from="Synergie Family" content="Green Skills" :image=greenskills
              link="https://greenskills.synergiefamily.com/"
              text-one="GreenSkills est un programme développé par Synergie Family, ayant pour objectif de valoriser les compétences liées aux métiers de la transition écologique."
-             text-two="J’ai mis en place un formulaire multi-étapes pour faciliter la collecte d’informations, un système de téléchargement de brochure, ainsi qu’une mise à jour dynamique de la carte des événements pour permettre aux utilisateurs de suivre les actions en cours."
-             techno="J’ai réalisé l’intégralité du développement avec les technologies Astro, Firebase et Tailwind CSS"/>
+             text-two="J'ai mis en place un formulaire multi-étapes pour faciliter la collecte d'informations, un système de téléchargement de brochure, ainsi qu'une mise à jour dynamique de la carte des événements pour permettre aux utilisateurs de suivre les actions en cours."
+             techno="J'ai réalisé l'intégralité du développement avec les technologies Astro, Firebase et Tailwind CSS"/>
     <Project title="Luberon ramonage" year="2024" from="Side Project" content="Luberon ramonage"
              :image="luberonRamonage" link="https://luberon-ramonage.fr/" text-one="Luberon Ramonage est un projet développé pour un ramoneur professionnel, visant à mettre en place un calendrier avec un système de prise de rendez-vous en ligne.
               Je me suis chargé de toute la partie développement, tandis que le design a été réalisé par un graphiste."
              techno="Le projet repose sur les technologies suivantes : Symfony 7, JavaScript et Tailwind CSS."
-             text-two="Parmi les principales fonctionnalités, j’ai développé un back-office avec EasyAdmin permettant la gestion complète des rendez-vous, incluant l’ajout de créneaux et le blocage de certaines dates. Le système envoie automatiquement des e-mails de confirmation aux clients, contenant un lien d’intégration vers Google Agenda. J’ai également assuré la mise en production du projet sur Hostinger."/>
+             text-two="Parmi les principales fonctionnalités, j'ai développé un back-office avec EasyAdmin permettant la gestion complète des rendez-vous, incluant l'ajout de créneaux et le blocage de certaines dates. Le système envoie automatiquement des e-mails de confirmation aux clients, contenant un lien d'intégration vers Google Agenda. J'ai également assuré la mise en production du projet sur Hostinger."/>
     <Project title="Big Mars" year="2025" from="Synergie Family" content="Big Mars" :image=bigMars
              link="https://wearebigmars.com/"
              text-one="Bigmars est une application mobile qui permet d'aider les jeunes à découvrir leurs soft skills et construire leur projet professionnel de manière ludique et interactive à travers des jeux et des événements."
@@ -106,7 +109,7 @@ Le back-office permet une gestion complète du contenu, l’intégration de Stri
     <div data-splitting
          class="inline section-text lg:leading-10 dm-sans-medium text-light-black text-2xl lg:text-3xl uppercase">
       Passionné
-      d’informatique depuis toujours, j’ai à cœur de créer des applications robustes mais aussi agréables à
+      d'informatique depuis toujours, j'ai à cœur de créer des applications robustes mais aussi agréables à
       utiliser
     </div>
 
@@ -136,7 +139,7 @@ Le back-office permet une gestion complète du contenu, l’intégration de Stri
 
     <div data-splitting
          class="lg:inline mt-4 lg:mt-0 section-text lg:leading-10  dm-sans-medium text-light-black text-2xl lg:text-3xl uppercase">
-      Pour moi, l’informatique, c’est avant tout comprendre le réel pour mieux le
+      Pour moi, l'informatique, c'est avant tout comprendre le réel pour mieux le
       modéliser.
     </div>
     <span>
@@ -158,8 +161,8 @@ Le back-office permet une gestion complète du contenu, l’intégration de Stri
     </span>
     <div data-splitting
          class="inline section-text lg:leading-10  dm-sans-medium text-light-black text-2xl lg:text-3xl uppercase">
-      C’est analyser des
-      problématiques métiers, s’imprégner d’un secteur, puis concevoir des outils sur mesure qui font sens et facilitent
+      C'est analyser des
+      problématiques métiers, s'imprégner d'un secteur, puis concevoir des outils sur mesure qui font sens et facilitent
       le
       quotidien.
     </div>
@@ -192,6 +195,7 @@ import synergieFamily from '~/assets/images/projects/synergie.jpg'
 import epopeeVillage from '~/assets/images/projects/epopee.jpg'
 import greenskills from '~/assets/images/projects/greenskills.jpg'
 import qwantic from '~/assets/images/projects/qwantic.jpg'
+import oldPortfolio from '~/assets/images/projects/old-portfolio.jpg'
 
 onMounted(() => {
 

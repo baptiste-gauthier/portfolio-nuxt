@@ -11,7 +11,7 @@
       </li>
       <li class="flex items-center gap-6">
         <div><a class="bloc_nav dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#infinite-slide">About</a></div>
-        <div><a class="bloc_nav dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#projects">Projects</a></div>
+        <div><a class="bloc_nav dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#projects">Projets</a></div>
         <div><a class="bloc_nav dm-sans-medium text-sm font-medium text-light-black hover:underline" href="#contact">Contact</a></div>
       </li>
     </ul>
@@ -29,7 +29,7 @@
 
       <ul class="flex flex-col gap-6 items-center justify-center">
         <li><a class=" text-light-black font-kenoky uppercase text-4xl hover:underline" @click="closeBurger" href="#infinite-slide">About</a></li>
-        <li><a class=" text-light-black font-kenoky uppercase text-4xl hover:underline" @click="closeBurger"href="#projects">Projects</a></li>
+        <li><a class=" text-light-black font-kenoky uppercase text-4xl hover:underline" @click="closeBurger"href="#projects">Projets</a></li>
         <li><a class=" text-light-black font-kenoky uppercase text-4xl hover:underline" @click="closeBurger" href="#contact">Contact</a></li>
         <li><svg class="star w-[36px] md:w-[56px]" width="56" height="56" viewBox="0 0 56 56" fill="none"
              xmlns="http://www.w3.org/2000/svg">

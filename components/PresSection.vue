@@ -28,7 +28,7 @@
         </div>
         <div class="flex-1 fade-in">
           <div class="text-white mb-4 uppercase dm-sans-medium underline">
-            My favourite tools :
+            Outils :
           </div>
           <ul>
             <li class="text-white uppercase dm-sans-medium">datagrip</li>
