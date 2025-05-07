@@ -15,6 +15,8 @@ export default defineNuxtPlugin((nuxtApp) => {
     const scrollTo = (element: string | HTMLElement) => {
         lenis.scrollTo(element, {
             offset: -50,
+            easing: (t) => -(Math.cos(Math.PI * t) - 1) / 2,
+            duration: .7,
         })
     }
 
