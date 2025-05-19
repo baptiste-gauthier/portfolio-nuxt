@@ -40,7 +40,7 @@
         <p class="text-presentation order-1 text-center md:text-left uppercase self-end font-medium dm-sans-medium md:max-w-lg text-light-black">
           Je m'appelle Baptiste Gauthier, j'ai 26 ans et j'exerce le métier développeur depuis plus de 3 ans. Après
           avoir obtenu un DUT dans le domaine du multimédia,
-          j'ai décider de me spécialiser dans le développement de <span class="underline">site</span> et <span
+          j'ai décidé de me spécialiser dans le développement de <span class="underline">site</span> et <span
             class="underline">d'application web.</span></p>
       </div>
     </div>
